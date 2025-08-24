@@ -4,10 +4,14 @@ project:
 
 book: 
   title: "Online Machine Learning com Aplicações em R"
-  author: "Rafael de Souza"
-  date: "2025"
+  author: "João Paulo Assis Bonifácio"
+  date: today
+  date-format: long
+  cover-image: "images/cover.png"
   chapters:
     - index.qmd
+
+    - part: "Parte 1"
     - chapters/01-introducao.qmd
 
 format:

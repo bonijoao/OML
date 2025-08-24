@@ -1,10 +1,7 @@
-﻿---
-title: "Online Machine Learning com Aplicações em R"
-format: html
----
-
+﻿
 
 # Bem-vindo {.unnumbered}
+
 
 Este é o website para o livro *Online Machine Learning com Aplicações em R*.  
 O objetivo deste material é compilar minhas notas de estudo sobre o tema, apresentar definições fundamentais da área e mostrar técnicas práticas de manipulação e aplicação em R.  
@@ -19,4 +16,17 @@ Ao longo dos capítulos, você aprenderá como:
 
 Este livro está em processo de escrita e ainda **não está finalizado**.  
 Meu objetivo é criar um repositório acessível de técnicas e boas práticas para que qualquer pessoa interessada possa começar a aprender e aplicar *online machine learning* em R.
+
+
+> Nota sobre a capa:  
+   A ilustração que aparece na capa deste livro foi criada a partir de uma fotografia de meu cachorro, Mylon, transformada em estilo de gravura clássica inspirado nas capas publicadas pela O’Reilly Media. 
+   Esta imagem tem caráter exclusivamente artístico e não possui vínculo ou endosso oficial da O’Reilly Media.
+
+
+
+
+
+
+
+
 
