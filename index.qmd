@@ -1,5 +1,22 @@
 ﻿---
-title:  Do Batch para a Online Machine Learning
+title: "Online Machine Learning com Aplicações em R"
 format: html
 ---
+
+
+# Bem-vindo {.unnumbered}
+
+Este é o website para o livro *Online Machine Learning com Aplicações em R*.  
+O objetivo deste material é compilar minhas notas de estudo sobre o tema, apresentar definições fundamentais da área e mostrar técnicas práticas de manipulação e aplicação em R.  
+
+Ao longo dos capítulos, você aprenderá como:
+
+- Entender os conceitos básicos e avançados de *online machine learning*;
+- Trabalhar com fluxos de dados e atualizar modelos em tempo real;
+- Implementar algoritmos em R e explorar pacotes úteis da linguagem;
+- Realizar transformações, visualizações e análises de forma reprodutível;
+- Organizar o raciocínio para facilitar descobertas e experimentos.
+
+Este livro está em processo de escrita e ainda **não está finalizado**.  
+Meu objetivo é criar um repositório acessível de técnicas e boas práticas para que qualquer pessoa interessada possa começar a aprender e aplicar *online machine learning* em R.
 

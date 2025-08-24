@@ -2,10 +2,10 @@ project:
   type: book
   output-dir: output/reports
 
-book:
-  title:  Do Batch para a Online Machine Learning
-  author: 
- date: 
+book: 
+  title: "Online Machine Learning com Aplicações em R"
+  author: "Rafael de Souza"
+  date: "2025"
   chapters:
     - index.qmd
     - chapters/01-introducao.qmd

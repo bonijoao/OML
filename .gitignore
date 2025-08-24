@@ -1,5 +1,7 @@
-﻿.Rhistory
+.Rhistory
 .RData
 .Rproj.user
 .DS_Store
 output/
+
+/.quarto/
