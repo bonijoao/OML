@@ -1,0 +1,116 @@
+project:
+  type: book
+  output-dir: _book
+  render:
+    - "*.qmd"
+    - "!EDA.qmd"
+
+book:
+  title: "R for Data Science"
+  author: 
+    - "Hadley Wickham"
+    - "Mine Çetinkaya-Rundel"
+    - "Garrett Grolemund"
+  date: "2023-08-24"
+  
+  chapters:
+    - index.qmd
+    - preface-2e.qmd
+
+    - part: "Whole Game"
+      chapters:
+        - whole-game.qmd
+
+    - part: "Visualize"
+      chapters: 
+        - data-visualize.qmd
+        - layers.qmd
+        - workflow-basics.qmd
+        - data-transform.qmd
+        - data-tidy.qmd
+
+    - part: "Import"
+      chapters:
+        - data-import.qmd
+        - spreadsheets.qmd
+        - databases.qmd
+        - webscraping.qmd
+
+    - part: "Wrangle"
+      chapters:
+        - numbers.qmd
+        - strings.qmd
+        - regexps.qmd
+        - factors.qmd
+        - datetimes.qmd
+        - missing-values.qmd
+        - joins.qmd
+        - rectangling.qmd
+
+    - part: "Program"
+      chapters:
+        - iteration.qmd
+        - functions.qmd
+        - workflow-scripts.qmd
+        - logicals.qmd
+        - arrow.qmd
+
+    - part: "Communicate"
+      chapters:
+        - quarto.qmd
+        - workflow-style.qmd
+        - quarto-formats.qmd
+        - graphics-for-communication.qmd
+        - communication.qmd
+
+    - part: "Conclusion"
+      chapters:
+        - workflow-help.qmd
+        - base-R.qmd
+        - contribute.qmd
+
+  appendices:
+    - EDA.qmd
+
+  page-footer: 
+    left: |
+      By Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  
+  sharing: [twitter, facebook]
+  repo-url: https://github.com/hadley/r4ds/
+  repo-actions: [source, issue]
+  
+  downloads: [pdf, epub]
+
+bibliography: references.bib
+csl: apa.csl
+
+format:
+  html:
+    theme:
+      light: [cosmo, r4ds.scss]
+      dark: [cosmo, r4ds.scss, theme-dark.scss]
+    link-external-icon: true
+    link-external-newwindow: true
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: atom-one
+  
+  pdf:
+    documentclass: scrreprt
+    papersize: a4
+    colorlinks: true
+    highlight-style: arrow
+
+  epub:
+    highlight-style: arrow
+
+execute:
+  freeze: auto
+  cache: true
+
+#knitr:
+#  opts_chunk: 
+#    fig.align: "center"

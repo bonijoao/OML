@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: output/reports
+
+book:
+  title:  Do Batch para a Online Machine Learning
+  author: 
+ date: 
+  chapters:
+    - index.qmd
+    - chapters/01-introducao.qmd
+
+format:
+  html:
+    theme: default
+    toc: true
+    number-sections: true
+    css: styles.css
+  pdf:
+    documentclass: scrreprt
+
+bibliography: references.bib
+lang: pt

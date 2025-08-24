@@ -1,0 +1,124 @@
+/*-- scss:defaults --*/
+
+// Import fonts
+@import url(https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+
+$presentation-font-size-root: 32px;
+
+
+// Re-colorize callouts
+$callout-color-note: $blue-300;
+$callout-color-tip: $green-300;
+$callout-color-warning: $orange-300;
+$callout-color-danger: $red-300;
+$callout-color-important: $cyan-300;
+
+
+/*-- scss:rules --*/
+
+// Must be qualified so doesn't apply to revealjs output
+.quarto-html-revealjs {
+  .callout.callout-style-default {
+    border-left: 5px solid;
+  }
+}
+
+.solution {
+  border: 1px solid $gray-200;
+  border-radius: 0.25rem;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.solution details {
+  margin-bottom: 0;
+}
+
+.solution summary {
+  font-weight: bold;
+}
+
+.unlisted {
+  color: $gray-500;
+}
+
+.caption-top {
+  caption-side: top;
+}
+
+.caption-bottom {
+  caption-side: bottom;
+}
+
+
+// Tweak styling of admonitions
+.note {
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 5px solid $gray-300;
+  background-color: $gray-100;
+}
+
+.note p {
+  margin-bottom: 0;
+}
+
+.note p:not(:first-child) {
+  margin-top: 1em;
+}
+
+
+// Make sure that long code lines in narrow containers wrap
+.sourceCode {
+  overflow-x: auto;
+  white-space: pre;
+}
+
+// Don't let images get too big
+.cell-output img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+// Make links more obvious
+.book .quarto-body a {
+  text-decoration: underline;
+}
+
+// But not in a few places where it looks weird
+.book .quarto-body .toc-actions a,
+.book .quarto-body .navbar-brand a,
+.book .quarto-body .nav-link a,
+.book .quarto-body .sidebar-item a,
+.book .quarto-body .sidebar-menu a,
+.book .quarto-body .sidebar-title a,
+.book .quarto-body .quarto-grid-link {
+  text-decoration: none;
+}
+
+
+// Make sure that alt text is displayed when image is missing
+// From https://adrianroselli.com/2020/03/tweaking-broken-images.html
+img[src]:not([alt=""]) {
+  position: relative;
+  text-align: center;
+}
+
+img[src]:not([alt=""])::before {
+  content: "[Missing image: " attr(alt) "]";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+
+  // a bit of styling to make it look nicer
+  border: 1px solid #ccc;
+  padding: 1em;
+}

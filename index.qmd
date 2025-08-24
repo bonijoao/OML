@@ -1,0 +1,5 @@
+﻿---
+title:  Do Batch para a Online Machine Learning
+format: html
+---
+
